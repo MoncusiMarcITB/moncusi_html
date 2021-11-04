@@ -1,0 +1,12 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+div{
+    height: 500px;
+    width: 500px;
+    background-color: crimson;
+    border-radius: 25%;
+    box-shadow: 10px 10px grey;
+}
