@@ -41,8 +41,8 @@ Moncusí i Rubio
         </nav>
         <hr>
     </header>
-    <div class="registro contacto">
-        <h3>SOLICITUD DE CONTACTO</h3>
+    <div class="registro alta">
+        <h3>SOLICITUD DE REGISTRO</h3>
         <form  method="GET" action="javascript:void(0)">
             <label for="nombre">Nombre:</label>
             <input id="nombre" type="text" name="nombre" pattern="[A-Za-z ].{3,}" required>
@@ -50,14 +50,23 @@ Moncusí i Rubio
             <label for="apellido">Apellido:</label>
             <input id="apellido" type="text" name="apellido" pattern="[A-Za-z ].{3,}" required>
             
-            <label for="query">Motivo del contacto:</label>
-            <select id="query" name="query">
-                <option>Enviar un comentario</option>
-                <option>Enviar una receta</option>
-                <option>Otros</option>
-            </select>
-            <label for="TextArea">Mensaje:</label>
-            <textarea id="TextArea" rows="19"></textarea>
+            <label for="dni">DNI:</label>
+            <input id="dni" type="text" name="dni" pattern="[0-9]{8}[A-Za-z]{1}" required>
+            
+            <label for="fNaci">Fecha de nacimiento:</label>
+            <input id="fNaci" type="date" name="fNaci" required>
+            
+            <label for="user">User:</label>
+            <input id="user" type="text" name="user" required>
+
+            <label for="pass">Password:</label>
+            <input id="pass" type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+            
+            <label for="spam">Quiere recibir correo en tu e-mail de contacto</label>
+            <input id="spam" type="checkbox">
             
 
             <button type="submit">Log on</button>
