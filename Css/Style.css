@@ -284,7 +284,6 @@ img.drpdwn{
 }
 .registro input[type='checkbox']{
     display: inline;
-    width:auto;
     box-shadow: 0.1rem 0.1rem 0.2rem var(--clr-ligth-brown);
 }
 .registro textarea{
@@ -303,6 +302,33 @@ img.drpdwn{
     .registro input, .registro select, .registro textarea,.registro button{
         width: 30%;
     }
+}
+/*-------------------------------------------------------*/
+.pagination{
+    display: table;
+    margin: 0 auto;
+}
+.pagination ul{
+    display:block;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.pagination ul li{
+    height:4rem;
+    width: 4rem;
+    list-style: none;
+    text-align: center;
+    float: left;
+    padding: 1rem;
+    margin: 0.2rem;
+    background-color: var(--clr-green);
+    opacity: 0.85;
+    border-radius: 50%;
+}
+.pagination ul li:hover{
+    background-color: var(--clr-dark);
+    color:var(--clr-green);
 }
 /*-------------------------------------------------------*/
 .Fmenu-ul{
