@@ -273,37 +273,21 @@ img.drpdwn{
     background-position: right;
 
 }
-.registro input{
+.registro input, .registro select, .registro textarea,.registro button{
     box-shadow: 0.3rem 0.3rem 0.2rem var(--clr-ligth-brown);
     box-sizing: border-box;
     border: none;
     display: block;
     padding:0.5rem;
     margin:0.5rem;
-    width:30%;
+    width:100%;
 }
 .registro input[type='checkbox']{
     display: inline;
     width:auto;
     box-shadow: 0.1rem 0.1rem 0.2rem var(--clr-ligth-brown);
 }
-.registro select{
-    box-shadow: 0.3rem 0.3rem 0.2rem var(--clr-ligth-brown);
-    box-sizing: border-box;
-    border: none;
-    display: block;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    width: 30%;
-}
 .registro textarea{
-    box-shadow: 0.3rem 0.3rem 0.2rem var(--clr-ligth-brown);
-    box-sizing: border-box;
-    border: none;
-    display: block;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    width: 30%;
     resize: none;
 }
 .registro label{
@@ -311,15 +295,14 @@ img.drpdwn{
     font-weight: bold;
 }
 .registro button{
-    box-shadow: 0.3rem 0.3rem 0.2rem var(--clr-ligth-brown);
     background-color: var(--clr-dark);
     color: var(--clr-green);
-    border: none;
     font-weight: bold;
-    padding:0.5rem;
-    margin: 0.5rem;
-    width: 30%;
-    display: block;
+}
+@media screen and (min-width:600px){
+    .registro input, .registro select, .registro textarea,.registro button{
+        width: 30%;
+    }
 }
 /*-------------------------------------------------------*/
 .Fmenu-ul{
